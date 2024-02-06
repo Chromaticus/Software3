@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="702.0" prefWidth="992.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportPageController">
+    <TableView fx:id="AppointmentByTypeTable" layoutX="23.0" layoutY="42.0" prefHeight="121.0" prefWidth="928.0">
+        <columns>
+            <TableColumn prefWidth="81.0" text="Appointment ID" />
+            <TableColumn prefWidth="73.0" text="Title" />
+            <TableColumn prefWidth="167.0" text="Description" />
+            <TableColumn prefWidth="88.0" text="Location" />
+            <TableColumn prefWidth="60.0" text="Contact" />
+            <TableColumn prefWidth="66.0" text="Type" />
+            <TableColumn prefWidth="138.0" text="Start Date and Time" />
+            <TableColumn prefWidth="123.0" text="End Date and Time" />
+            <TableColumn prefWidth="70.0" text="Customer ID" />
+            <TableColumn prefWidth="61.0" text="User ID" />
+            <TableColumn prefWidth="70.0" text="Customer ID" />
+        </columns>
+    </TableView>
+    <TableView fx:id="AppointmentByMonthTable" layoutX="23.0" layoutY="212.0" prefHeight="121.0" prefWidth="928.0">
+        <columns>
+            <TableColumn prefWidth="81.0" text="Appointment ID" />
+            <TableColumn prefWidth="73.0" text="Title" />
+            <TableColumn prefWidth="167.0" text="Description" />
+            <TableColumn prefWidth="88.0" text="Location" />
+            <TableColumn prefWidth="60.0" text="Contact" />
+            <TableColumn prefWidth="66.0" text="Type" />
+            <TableColumn prefWidth="138.0" text="Start Date and Time" />
+            <TableColumn prefWidth="123.0" text="End Date and Time" />
+            <TableColumn prefWidth="70.0" text="Customer ID" />
+            <TableColumn prefWidth="61.0" text="User ID" />
+        </columns>
+    </TableView>
+    <TableView fx:id="AppointmentByContactTable" layoutX="23.0" layoutY="390.0" prefHeight="121.0" prefWidth="928.0">
+        <columns>
+            <TableColumn prefWidth="81.0" text="Appointment ID" />
+            <TableColumn prefWidth="73.0" text="Title" />
+            <TableColumn prefWidth="167.0" text="Description" />
+            <TableColumn prefWidth="88.0" text="Location" />
+            <TableColumn prefWidth="60.0" text="Contact" />
+            <TableColumn prefWidth="66.0" text="Type" />
+            <TableColumn prefWidth="138.0" text="Start Date and Time" />
+            <TableColumn prefWidth="123.0" text="End Date and Time" />
+            <TableColumn prefWidth="70.0" text="Customer ID" />
+            <TableColumn prefWidth="61.0" text="User ID" />
+        </columns>
+    </TableView>
+    <TableView fx:id="OtherReportTable" layoutX="23.0" layoutY="538.0" prefHeight="121.0" prefWidth="928.0">
+        <columns>
+            <TableColumn prefWidth="81.0" text="Appointment ID" />
+            <TableColumn prefWidth="73.0" text="Title" />
+            <TableColumn prefWidth="167.0" text="Description" />
+            <TableColumn prefWidth="89.0" text="Location" />
+            <TableColumn prefWidth="59.0" text="Contact" />
+            <TableColumn prefWidth="66.0" text="Type" />
+            <TableColumn prefWidth="138.0" text="Start Date and Time" />
+            <TableColumn prefWidth="123.0" text="End Date and Time" />
+            <TableColumn prefWidth="70.0" text="Customer ID" />
+            <TableColumn prefWidth="61.0" text="User ID" />
+        </columns>
+    </TableView>
+    <Label layoutX="23.0" layoutY="1.0" text="Appointments By Type" />
+    <Label layoutX="23.0" layoutY="170.0" text="Appointments By Month" />
+    <Label layoutX="27.0" layoutY="347.0" text="Appointments By Contact" />
+    <Label layoutX="23.0" layoutY="519.0" text="Other Report" />
+    <ComboBox fx:id="AppointmentByTypeComboBox" layoutX="23.0" layoutY="17.0" onAction="OnAppointmentByTypeComboBoxClicked" prefWidth="150.0" />
+    <ComboBox fx:id="AppointmentByMonthComboBox" layoutX="23.0" layoutY="187.0" onAction="OnAppointmentByMonthComboBoxClicked" prefWidth="150.0" />
+    <ComboBox fx:id="AppointmentByContactComboBox" layoutX="23.0" layoutY="364.0" onAction="OnAppointmentByContactComboBoxClicked" prefWidth="150.0" />
+    <Button mnemonicParsing="false" text="Return to Overview" layoutX="860.0" layoutY="10.0" fx:id="ReturnToOverviewButton" onAction="OnReturnToOverviewButtonClicked"/>
+</AnchorPane>
